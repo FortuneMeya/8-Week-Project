@@ -42,15 +42,14 @@ public class Shows extends Guide {
     	ShowsList.add(new Shows("The Twilight Zone", "David Simon", "Drama", 57.48 ));
     	ShowsList.add(new Shows("Suits", "David Simon", "Drama", 57.48 ));
     	
-    	for (int i =0; i < ShowsList.size(); i++) {
-    		Shows show = ShowsList.get(i);
+    
     	
-    	carts.addShow(show);
-    	carts.removeShows(show);
+    	//carts.addShow(show);
+    	//carts.removeShows(show);
     }
    }
    }
-}
+
 
     
 

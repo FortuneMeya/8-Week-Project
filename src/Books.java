@@ -41,16 +41,14 @@ public class Books extends Guide {
      	BooksList.add(new Books("Lost", "David Simon", "Drama", 57.48 ));
      	BooksList.add(new Books("The Twilight Zone", "David Simon", "Drama", 57.48 ));
      	BooksList.add(new Books("Suits", "David Simon", "Drama", 57.48 ));
+     
      	
-     	for (int i =0; i < BooksList.size(); i++) {
-     		Books book =  BooksList.get(i);
-     	
-     	carts.addBooks(book);
-     	carts.removeBooks(book);
+     	//carts.addBooks(book);
+     	//carts.removeBooks(book);
      }
     }
     }
- }
+ 
 
 
 

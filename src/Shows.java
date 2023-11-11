@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 public class Shows extends Guide {
 
@@ -22,24 +23,32 @@ public class Shows extends Guide {
     
    public class Mainm{
     public static void main(String[] args) {
-   
-    	Shows show1 = new Shows("The Wire", "David Simon", "Drama", 57.48 );
-    	Shows show2 = new Shows("The Sopranos", "David Simon", "Drama", 57.48 );
-    	Shows show3 = new Shows("Breaking Bad", "David Simon", "Drama", 57.48 );
-    	Shows show4 = new Shows("Snowfall", "David Simon", "Drama", 57.48 );
-    	Shows show5 = new Shows("The Boondocks", "David Simon", "Drama", 57.48 );
-    	Shows show6 = new Shows("Avatar:Last Airbender", "David Simon", "Drama", 57.48 );
-    	Shows show7 = new Shows("Miami Vice", "David Simon", "Drama", 57.48 );
-    	Shows show8 = new Shows("Survivor", "David Simon", "Drama", 57.48 );
-    	Shows show9 = new Shows("Big Brother", "David Simon", "Drama", 57.48 );
-    	Shows show10 = new Shows("Planet Earth", "David Simon", "Drama", 57.48 );
-    	Shows show11= new Shows("Chenobyl", "David Simon", "Drama", 57.48 );
-    	Shows show12= new Shows("Stranger Things", "David Simon", "Drama", 57.48 );
-    	Shows show13= new Shows("Dark", "David Simon", "Drama", 57.48 );
-    	Shows show14= new Shows("Lost", "David Simon", "Drama", 57.48 );
-    	Shows show15= new Shows("The Twilight Zone", "David Simon", "Drama", 57.48 );
-    	Shows show116= new Shows("Suits", "David Simon", "Drama", 57.48 );
+    	Cart carts = new Cart();
+    	ArrayList<Shows> ShowsList = new ArrayList<>();
+    	ShowsList.add(new Shows("The Wire", "David Simon", "Drama", 57.48 ));
+    	ShowsList.add(new Shows("The Sopranos", "David Chase", "Drama", 57.48 ));
+    	ShowsList.add(new Shows("Breaking Bad", "Vance Gilligan", "Drama", 57.48 ));
+    	ShowsList.add(new Shows("Snowfall", "Nicolas Stern", "Drama", 57.48 ));
+    	ShowsList.add(new Shows("The Boondocks", "", "Drama", 57.48 ));
+    	ShowsList.add(new Shows("Avatar:Last Airbender", "David Simon", "Drama", 57.48 ));
+    	ShowsList.add(new Shows("Miami Vice", "David Simon", "Drama", 57.48 ));
+    	ShowsList.add(new Shows("Survivor", "David Simon", "Drama", 57.48 ));
+    	ShowsList.add(new Shows("Big Brother", "David Simon", "Drama", 57.48 ));
+    	ShowsList.add(new Shows("Planet Earth", "David Simon", "Drama", 57.48 ));
+    	ShowsList.add(new Shows("Chenobyl", "David Simon", "Drama", 57.48 ));
+    	ShowsList.add(new Shows("Stranger Things", "David Simon", "Drama", 57.48 ));
+    	ShowsList.add(new Shows("Dark", "David Simon", "Drama", 57.48 ));
+    	ShowsList.add(new Shows("Lost", "David Simon", "Drama", 57.48 ));
+    	ShowsList.add(new Shows("The Twilight Zone", "David Simon", "Drama", 57.48 ));
+    	ShowsList.add(new Shows("Suits", "David Simon", "Drama", 57.48 ));
+    	
+    	for (int i =0; i < ShowsList.size(); i++) {
+    		Shows show = ShowsList.get(i);
+    	
+    	carts.addShow(show);
+    	carts.removeShows(show);
     }
+   }
    }
 }
 

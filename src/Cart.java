@@ -2,20 +2,24 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Cart extends Account {
-
-private Account account;
-private List<Books>Books;
-private List<Shows>shows;
-private ArrayList Shows;
-
-public Cart(Account account) {
-	this.account = account;
-	this.Books = new ArrayList<>();
-	this.shows = new ArrayList<>();
+private ArrayList<Shows> showList;
+private ArrayList <Books>bookList;
+public Cart() {
+	this.showList = new ArrayList<>();
+	this.bookList =  new ArrayList<>();
+}
+public void addShow(Shows shows) {
+	showList.add(shows);
+}
+public void removeShows(Shows shows) {
+	showList.remove(shows);
+}
+public void removeBooks(Books book) {
+	bookList.remove(book);
 	
 }
-	public void removeBook(Books book) {
-		Books.remove(book);
-	}
+public void addBooks(Books book) {
+	bookList.add(book);
+}
 
 }

@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 public class Books extends Guide {
 
@@ -20,34 +21,48 @@ public class Books extends Guide {
     }
    
     
-   public class Mainm{
-    public static void main(String[] args) {
-   
-    	Books book1 = new Books("Ugly Love", "Colleen Hoover", "Romance", 9.79 );
-    	Books book2 = new Books("Bully", "Penelope Douglas", "Romance", 11.29);
-    	Books book3 = new Books("It Ends With Us", "Collen Hoover", "Romance",10.39);
-		/*
-		 * Books book4 = new Books("Ugly Love", "Colleen Hoover", "Romance", 9.79 );
-		 * Books book5 = new Books("Ugly Love", "Colleen Hoover", "Romance", 9.79 );
-		 * Books book6 = new Books("Ugly Love", "Colleen Hoover", "Romance", 9.79 );
-		 * Books book7 = new Books("Ugly Love", "Colleen Hoover", "Romance", 9.79 );
-		 * Books book8 = new Books("Ugly Love", "Colleen Hoover", "Romance", 9.79 );
-		 * Books book9 = new Books("Ugly Love", "Colleen Hoover", "Romance", 9.79 );
-		 */
+    public class Mainm{
+     public static void main(String[] args) {
+     	Cart carts = new Cart();
+     	ArrayList<Books> BooksList = new ArrayList<>();
+     	BooksList.add(new Books("In Search Of Lost time", "Marcel Proust", "Drama", 57.48 ));
+     	BooksList.add(new Books("Ulysses", "James Joyce", "Drama", 57.48 ));
+     	BooksList.add(new Books("Breaking Bad", "Vance Gilligan", "Drama", 57.48 ));
+     	BooksList.add(new Books("Don Quixote", "Miguel de Cervantes", "Drama", 57.48 ));
+     	BooksList.add(new Books("One Hundred Years Of Solitude", "abriel Garcia Marquez", "Drama", 57.48 ));
+     	BooksList.add(new Books("The Great Gatsby", "F. Scott Fitzgerald", "Drama", 57.48 ));
+     	BooksList.add(new Books("Moby Dick", "Herman Melville", "Drama", 57.48 ));
+     	BooksList.add(new Books("War and Peace", "Leo Tolstoy", "Drama", 57.48 ));
+     	BooksList.add(new Books("Hamlet", "David Simon", "Drama", 57.48 ));
+     	BooksList.add(new Books("the Odyssey", "Homer", "Drama", 57.48 ));
+     	BooksList.add(new Books("Madame Bovary", "Gustave Flaubert", "Drama", 57.48 ));
+     	BooksList.add(new Books("The Divine Comedy", "Dante Alighieri", "Drama", 57.48 ));
+     	BooksList.add(new Books("1984", "George Orwell", "Drama", 57.48 ));
+     	BooksList.add(new Books("The Lord Of The Rings", "J.R.R Tolkien", "Drama", 57.48 ));
+     	BooksList.add(new Books("The Catcher In the Rye", "J.D Salinger", "Drama", 57.48 ));
+     	BooksList.add(new Books("Catch-22", "Joseph heller", "Drama", 57.48 ));
+     	BooksList.add(new Books("The Grapes Of Wrath", "John Steinbeck", "Drama", 57.48 ));
+     	BooksList.add(new Books("Possession", "A.S Byatt", "Drama", 57.48 ));
+     	BooksList.add(new Books("Harry potter and the Deathly Hallows", "J.K Rowling", "Drama", 57.48 ));
+     	BooksList.add(new Books("The Da Vinci Code", "Dan Moore", "Drama", 57.48 ));
+     	BooksList.add(new Books("The Alchemist", "", "Drama", 57.48 ));
+     	BooksList.add(new Books("The Ginge", "", "Drama", 57.48 ));
+     	BooksList.add(new Books("Wolf Hall", "Hilary Mantel", "Drama", 57.48 ));
+     	BooksList.add(new Books("Gilead", "Marilyne Robinson", "Drama", 57.48 ));
 
 
+  
 
-    	
+
+ 
+
+     	
+     	//carts.addBooks(book);
+     	//carts.removeBooks(book);
+     }
     }
-   }
+    }
+ 
 
-
-public static void remove(Books book) {
-	// TODO Auto-generated method stub
-	
-}
-}
-
-    
 
 

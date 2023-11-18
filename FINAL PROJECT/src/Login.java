@@ -3,6 +3,7 @@ import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
@@ -32,7 +33,16 @@ public class Login extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        // TODO Auto-generated method stub
+    	if (e.getSource() ==loginButton) {
+    		if (username.getText().equals("CISC191")) {
+    			new Bookstore();
+    			this.dispose();
+    		}
+    		else {
+    			JOptionPane.showMessageDialog(this,"Wrong Password, Hint: Java Class");
+    		
+    		}
+    	}
     }
 
 public static void main(String[] args) {

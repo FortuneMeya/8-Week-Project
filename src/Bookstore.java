@@ -47,12 +47,36 @@ public  Bookstore() {
  		Books book = bookList.get(i);
  		bookInfo[i] = book.getTitle() +"-"+ book.getAuthor() + "-" + book.getGenre() + "-$"+ book.getPrice();
  	}
-bookComboBox = new JComboBox<>(bookInfo);
-	Add = new JButton("Add To cart");
-	Remove = new JButton("Remove from Cart");
-	
-	frame.add(Add);
-	frame.add(Remove);
+ 	
+ 		bookComboBox = new JComboBox<>(bookInfo);
+ 		Add = new JButton("Add To cart");
+ 		Remove = new JButton("Remove from Cart");
+ 		
+ 		
+ 		
+ 		Add.setBackground(Color.GREEN);
+ 		Remove.setBackground(Color.RED);
+ 		Add.setOpaque(true);
+ 		Remove.setOpaque(true);
+ 		
+ 		Dimension buttonsize = new Dimension(100,100);
+ 		Add.setPreferredSize(buttonsize);
+ 		Remove.setPreferredSize(buttonsize);
+ 		
+ 		JPanel buttonPanel = new JPanel();
+ 		buttonPanel.setLayout(new FlowLayout(FlowLayout.LEADING));
+ 		buttonPanel.add(Add);
+ 		buttonPanel.add(Remove);
+ 		
+ 		JPanel Filter = new JPanel();
+ 		JLabel genreLabel = new JLabel("Genre");
+ 		Filter.add(genreLabel);
+ 		Filter.add(genreLabel);
+ 		frame.setLayout(new BorderLayout());
+ 		frame.add(Filter, BorderLayout.NORTH);
+ 		
+	frame.setLayout(new BorderLayout());
+	frame.add(buttonPanel , BorderLayout.NORTH);
 	frame.add(bookComboBox);
 	frame.setVisible(true);
 }

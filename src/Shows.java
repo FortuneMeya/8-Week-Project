@@ -1,54 +1,94 @@
 import java.util.ArrayList;
-
+/**
+ * 
+ * Lead Author(s):
+ * @author Fortune Meya
+ * References :
+ * 
+ *         Downey, Allen B. “Think Data Structures: Algorithms and Information Retrieval in Java.” Green Tea Press, 2016
+ *         https://greenteapress.com/thinkdast/html/index.html
+ *         Version date:12/15
+ *         
+ *         Krzysztof Kowalczyk "Essential Java a free Java programming book. (n.d.)."
+ *         https://www.programming-books.io/essential/java/ 
+ *         Version date 12/15
+ * 
+ * Responsibilities: This Class extends the guide class while adding on getters and setters for producer
+ *
+ */
 public class Shows extends Guide {
 
 
 		private String producer;	
-		
 	
+	/**
+	 * 
+	 * @param title
+	 * @param producer
+	 * @param genre
+	 * @param price
+	 */
     public Shows(String title, String producer, String genre, double price)
     {
     	super(title, genre,price);
     	this.producer = producer;
     	
 }
+    /**
+     * gets the producer of the show
+     * @return producer
+     */
     public String getProducer() {
     	return producer;
     }
-    
+    /**
+     * sets the producer of the show
+     * @param producer
+     */
     public void setProducer(String producer) {
     	this.producer= producer;
     }
+    
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
    
-    
-   public class Mainm{
-    public static void main(String[] args) {
-    	Cart carts = new Cart();
-    	ArrayList<Shows> ShowsList = new ArrayList<>();
-    	ShowsList.add(new Shows("The Wire", "David Simon", "Drama", 57.48 ));
-    	ShowsList.add(new Shows("The Sopranos", "David Chase", "Drama", 57.48 ));
-    	ShowsList.add(new Shows("Breaking Bad", "Vance Gilligan", "Drama", 57.48 ));
-    	ShowsList.add(new Shows("Snowfall", "Nicolas Stern", "Drama", 57.48 ));
-    	ShowsList.add(new Shows("The Boondocks", "", "Drama", 57.48 ));
-    	ShowsList.add(new Shows("Avatar:Last Airbender", "David Simon", "Drama", 57.48 ));
-    	ShowsList.add(new Shows("Miami Vice", "David Simon", "Drama", 57.48 ));
-    	ShowsList.add(new Shows("Survivor", "David Simon", "Drama", 57.48 ));
-    	ShowsList.add(new Shows("Big Brother", "David Simon", "Drama", 57.48 ));
-    	ShowsList.add(new Shows("Planet Earth", "David Simon", "Drama", 57.48 ));
-    	ShowsList.add(new Shows("Chenobyl", "David Simon", "Drama", 57.48 ));
-    	ShowsList.add(new Shows("Stranger Things", "David Simon", "Drama", 57.48 ));
-    	ShowsList.add(new Shows("Dark", "David Simon", "Drama", 57.48 ));
-    	ShowsList.add(new Shows("Lost", "David Simon", "Drama", 57.48 ));
-    	ShowsList.add(new Shows("The Twilight Zone", "David Simon", "Drama", 57.48 ));
-    	ShowsList.add(new Shows("Suits", "David Simon", "Drama", 57.48 ));
-    	
-    
-    	
-    	//carts.addShow(show);
-    	//carts.removeShows(show);
-    }
-   }
-   }
 
 
     
